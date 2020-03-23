@@ -1,7 +1,79 @@
+
+
 body {
     text-align: center;
+    background-color: white;
+    height: 100vh;
 }
 
-img {
-    width: 500px;
+.chapter {
+    padding-top: 40px;
+    background-color: white;
+    width: 50%;
+    margin: 0px auto;
+    height: 100vh;
+    font-family: "Gotham Medium", sans-serif;
+}
+
+.main-title {
+    font-size: 130px;
+    margin-top: 30px;
+}
+
+.subscript {
+    font-size: 23px;
+    margin-top: 0px;
+}
+
+.link:hover {
+    cursor: help;
+}
+
+@media screen and (max-width: 1300px) {
+    .chapter {
+      width: 60%; 
+    }
+
+    .main-title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .chapter {
+      width: 100%; 
+    }
+    
+    .main-title {
+        font-size: 55px;
+    }
+
+    .subscript {
+        font-size: 18px;
+    }
+}
+
+
+
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.gray {
+    color: #696969;
+}
+
+
+
+#hallowed {
+    color: #CCCC66;
 }

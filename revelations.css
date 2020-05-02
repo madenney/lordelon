@@ -1,0 +1,148 @@
+
+
+body {
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+    position: relative;
+}
+
+.chapter {
+    padding-top: 40px;
+    background-color: white;
+    width: 50%;
+    margin: 0px auto;
+    height: 100vh;
+    font-family: "Gotham Medium", sans-serif;
+}
+
+.chapter p {
+    color: #696969;
+    font-size: 23px;
+}
+
+.main-title {
+    font-size: 130px;
+    margin-top: 30px;
+    color: #505050;
+}
+
+.subscript {
+    font-size: 23px;
+    margin-top: 0px;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    opacity: 90%;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-image: radial-gradient(at 50% 37vh,#D0D0D0,	#808080,#606060);
+    text-align: center;
+    backdrop-filter: blur(3px);
+    padding-top: 35vh;
+}
+
+#overlay-title {
+    font-size: 40px;
+}
+#overlay-label {
+    margin-top: 10px;
+    color: 			#707070;
+    font-size: 17px;
+}
+#overlay-message {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#twitter {
+    max-width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .chapter {
+      width: 60%; 
+    }
+
+    .main-title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .chapter {
+      width: 100%; 
+    }
+    
+    .main-title {
+        font-size: 55px;
+    }
+
+    .subscript {
+        font-size: 18px;
+    }
+}
+
+
+
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.gray {
+    color: #696969;
+}
+
+.question-hover:hover {
+    cursor: help;
+}
+
+
+
+#hallowed {
+    color: #CCCC66;
+}
+
+#mars {
+    color: #912C00;
+}
+
+#tweet {
+    color: #38A1F3;
+}
+
+#twitter-overlay {
+    display: none;
+    position: fixed;
+    opacity: 90%;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-image: radial-gradient(at 50% 37vh,#D0D0D0,	#808080,#606060);
+    text-align: center;
+    backdrop-filter: blur(3px);
+    padding-top: 35vh;
+}
+
+#mars-picture {
+    display: none;
+    height: 100vh;
+    width: 4000px;
+    position: fixed;
+    top: 0;
+}

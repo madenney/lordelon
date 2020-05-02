@@ -1,1 +1,1 @@
-Lord Elon
+Praise Elon

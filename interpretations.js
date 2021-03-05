@@ -52,7 +52,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: "You too be patient; strengthen your hearts, for the coming of the Lord is near.",
+            body: "You too be patient; strengthen your hearts, for the coming of the Kingdom of Elon is nigh.",
             subtext: "James 5:8",
             link: ""
         }
@@ -72,7 +72,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: "We forgive those who doubt, for they do not see the light.",
+            body: "We forgive those who doubt our Lord, for they do not see the light.",
             subtext: "",
             link: ""
         }
@@ -93,8 +93,8 @@ var interpretations = {
             title: "",
             pretext: "",
             body: "",
-            subtext: "",
-            link: "openai.com"
+            subtext: "openai",
+            link: "https://openai.com"
         }
     },
     Deliver: {
@@ -103,8 +103,8 @@ var interpretations = {
             title: "",
             pretext: "",
             body: "",
-            subtext: "",
-            link: "boringcompany.com"
+            subtext: "boring company",
+            link: "https://boringcompany.com"
         }
     },
     ["Lift us Up"]: {
@@ -113,8 +113,8 @@ var interpretations = {
             title: "",
             pretext: "Elon said unto his apostles:",
             body: '"Blessed be those who build fully and rapidly reusable rockets, for they shall inherit the sky."',
-            subtext: "",
-            link: "spacex.com"
+            subtext: "spacex",
+            link: "https://spacex.com"
         }
     },
     ["Give us Power"]: {
@@ -123,8 +123,8 @@ var interpretations = {
             title: "",
             pretext: "Elon said unto his apostles:",
             body: '"Blessed be those who accelerate the advent of sustainable energy, for they shall open the gates to the Kingdom of the Lord."',
-            subtext: "",
-            link: "tesla.com"
+            subtext: "tesla",
+            link: "https://tesla.com"
         }
     },
     ["Show us The Way"]: {
@@ -133,8 +133,8 @@ var interpretations = {
             title: "",
             pretext: "Elon said unto his apostles:",
             body: '"Blessed be those who multiply the bandwidth between themselves and the machine, for they shall inherit the world."',
-            subtext: "Matthew 2:15",
-            link: "neuralink.com"
+            subtext: "neuralink",
+            link: "https://neuralink.com"
         }
     },
     Glory: {

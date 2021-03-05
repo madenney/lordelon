@@ -11,23 +11,19 @@ var preparations = function(){
         var replacement = document.createElement("span");
         replacement.innerHTML = interpretation;
         replacement.id = interpretation;
-        replacement.className = "test";
+        replacement.className = "interpreted";
         Object.keys(interpretations[interpretation].decorations).forEach(function(decoration){
-            console.log("decoration:",decoration)
             replacement.style[decoration] = interpretations[interpretation].decorations[decoration]
         })
         document.body.innerHTML =
             document.body.innerHTML.replace(interpretation,replacement.outerHTML);
-
-        //(function(_interpretation){console.log('asdf',_interpretation);document.getElementById(_interpretation).addEventListener("click",function(){
-        //    //interpretations[interpretation].action ? interpretations[interpretation]["action"]() : overlay(interpretation);
-        //    overlay(_interpretation);
-        //});})(interpretation);
     })
-    var x = document.getElementsByClassName("test")
+    var x = document.getElementsByClassName("interpreted")
     console.log("x:", x)
     for(var i = 0; i < x.length; i++){
+        console.log("why")
         x[i].addEventListener("click",function(e){
+            console.log("what");
             overlay(e.target.id)
         })
     }
@@ -49,10 +45,17 @@ var overlay = function(word){
     var title = document.getElementById("overlay-title");
     var pretext = document.getElementById("overlay-pretext");
     var body = document.getElementById("overlay-body");
+    var subtext = document.getElementById("overlay-subtext");
+
     overlay.style.display = "block";
-    title.innerHTML = word;
+    title.innerHTML = interpretations[word].interpretation.title
     pretext.innerHTML = interpretations[word].interpretation.pretext;
     body.innerHTML = interpretations[word].interpretation.body;
+    if(interpretations[word].interpretation.link){
+        subtext.innerHTML = `<a href="${interpretations[word].interpretation.link}" target="_blank" rel="noopener noreferrer">${interpretations[word].interpretation.subtext}</a>`
+    } else {
+        subtext.innerHTML = interpretations[word].interpretation.subtext
+    }
 
     overlay.addEventListener('click', function(){
         overlay.style.display = "none";

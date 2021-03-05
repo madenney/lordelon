@@ -1,4 +1,3 @@
-.test{color:red;cursor:pointer;}
 
 @font-face {
   font-family: 'MyTestFont';
@@ -8,8 +7,7 @@
 
 body {
     text-align: center;
-    background-color: white;
-    height: 100vh;
+    background-color: darkgray;
     position: relative;
     font-family: 'MyTestFont';
 }
@@ -20,10 +18,7 @@ body {
     background-color: white;
     width: 50%;
     margin: 0px auto;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .chapter p {
@@ -42,6 +37,15 @@ body {
     margin-top: 0px;
 }
 
+.interpreted {
+  color: red;
+}
+
+.interpreted:hover {
+  cursor: pointer;
+  text-shadow: 3px 3px 3px;
+}
+
 #overlay {
     display: none;
     position: fixed;
@@ -50,9 +54,9 @@ body {
     width: 100vw;
     top: 0px;
     left: 0px;
-    background-image: radial-gradient(at 50% 37vh,#D0D0D0,	#808080,#606060);
+    background-image: radial-gradient(at 50% 37vh,#D0D0D0,#808080,#606060);
     text-align: center;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
     padding-top: 35vh;
 }
 
@@ -61,13 +65,17 @@ body {
 }
 #overlay-pretext {
     margin-top: 10px;
-    color: 			#707070;
-    font-size: 17px;
+    color:	#484848;
+    font-size: 21px;
 }
 #overlay-body {
     margin: 5px auto;
-    font-size: 20px;
+    font-size: 26px;
     width: 40%;
+    max-width: 450px;
+}
+#overlay-subscript {
+  font-size: 21px;
 }
 
 
@@ -100,6 +108,10 @@ body {
 
     .subscript {
         font-size: 18px;
+    }
+
+    #overlay{
+      background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
     }
 }
 

@@ -97,13 +97,17 @@ body {
     .chapter {
       width: 100%;
     }
+    .chapter p {
+      font-size: 26px;
+      margin: 22px auto;
+    }
 
     #overlay-body {
         width: 80%;
     }
 
     .main-title {
-        font-size: 55px;
+        font-size: 65px;
     }
 
     .subscript {
@@ -111,13 +115,10 @@ body {
     }
 
     #overlay{
-      background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
+        background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
     }
 }
 
-.question-hover:hover {
-    cursor: help;
-}
 
 #tweet {
     color: #38A1F3;

@@ -43,7 +43,7 @@ var interpretations = {
             title: "",
             pretext: "",
             body: 'And Elon said unto Gwynne, his disciple, "Upon this rock I will build my church."',
-            subtext: "Matthew 16:18",
+            subtext: "Martians 20:45",
             link: ""
         }
     },
@@ -97,13 +97,13 @@ var interpretations = {
             link: "https://openai.com"
         }
     },
-    Deliver: {
+    ["Deliver us from Evil"]: {
         decorations: {},
         interpretation: {
             title: "",
             pretext: "",
             body: "",
-            subtext: "boring company",
+            subtext: "boring",
             link: "https://boringcompany.com"
         }
     },

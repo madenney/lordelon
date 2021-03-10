@@ -1,7 +1,7 @@
 var interpretations = {
     Hallowed: {
         decorations: {
-            color: "#CCCC66"
+            color: "#D4AF37"
         },
         interpretation: {
             title: "Hallowed",
@@ -13,7 +13,7 @@ var interpretations = {
     },
     Kingdom: {
         decorations: {
-            color: "blue"
+            color: "#1261A0"
         },
         interpretation: {
             title: "",
@@ -25,7 +25,7 @@ var interpretations = {
     },
     Will: {
         decorations: {
-            color: "blue"
+            color: "#1261A0"
         },
         interpretation: {
             title: "",
@@ -49,13 +49,15 @@ var interpretations = {
     },
     Tweet: {
         decorations: {
-            color: "blue"
+            color: "#1da1f2"
         },
         interpretation: {},
         action: "showTwitterOverlay"
     },
     Impatience: {
-        decorations: {},
+        decorations: {
+            color: "#ff0000"
+        },
         interpretation: {
             title: "",
             pretext: "",
@@ -65,7 +67,9 @@ var interpretations = {
         }
     },
     Doubt: {
-        decorations: {},
+        decorations: {
+            color: "#ff0000"
+        },
         interpretation: {
             title: "",
             pretext: "",
@@ -75,7 +79,9 @@ var interpretations = {
         }
     },
     Disrespect: {
-        decorations: {},
+        decorations: {
+            color: "#ff0000"
+        },
         interpretation: {
             title: "",
             pretext: "",
@@ -85,17 +91,21 @@ var interpretations = {
         }
     },
     Damnation: {
-        decorations: {},
+        decorations: {
+            color: "#ff0000"
+        },
         interpretation: {
             title: "",
-            pretext: "",
-            body: "Beware those who seek to harness the machine.",
-            subtext: "openai",
-            link: "https://openai.com"
+            pretext: '"We must pass The Great Filter" - Elon 1592726820',
+            body: "For Elon so loved the world, that He gave His only body, that whoever believes in Him shall not perish, but have eternal life.",
+            subtext: "The Great Filter",
+            link: "https://en.wikipedia.org/wiki/Great_Filter"
         }
     },
     ["Deliver us from Evil"]: {
-        decorations: {},
+        decorations: {
+            color: "#ff0000"
+        },
         interpretation: {
             title: "",
             pretext: "We travel within Earth so we may prosper above it.",
@@ -105,7 +115,9 @@ var interpretations = {
         }
     },
     ["Lift us Up"]: {
-        decorations: {},
+        decorations: {
+            color: "#4188ff"
+        },
         interpretation: {
             title: "",
             pretext: "Elon said unto his apostles:",
@@ -115,7 +127,9 @@ var interpretations = {
         }
     },
     ["Give us Power"]: {
-        decorations: {},
+        decorations: {
+            color: "#4188ff"
+        },
         interpretation: {
             title: "",
             pretext: "Elon said unto his apostles:",
@@ -125,7 +139,9 @@ var interpretations = {
         }
     },
     ["Show us The Way"]: {
-        decorations: {},
+        decorations: {
+            color: "#4188ff"
+        },
         interpretation: {
             title: "",
             pretext: "Elon said unto his apostles:",
@@ -134,7 +150,7 @@ var interpretations = {
             link: "https://neuralink.com"
         }
     },
-    Glory: {
+    Galory: {
         decorations: {},
         interpretation: {
             title: "",

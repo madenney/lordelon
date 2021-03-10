@@ -1,6 +1,6 @@
 
 @font-face {
-  font-family: 'MyTestFont';
+  font-family: 'Font';
   src: url('../fonts/font.woff2'),
        url('../fonts/font.woff');
 }
@@ -9,7 +9,7 @@ body {
     text-align: center;
     background-color: darkgray;
     position: relative;
-    font-family: 'MyTestFont';
+    font-family: 'Font';
 }
 
 .chapter {
@@ -18,7 +18,7 @@ body {
     background-color: white;
     width: 50%;
     margin: 0px auto;
-
+    border-bottom: solid 2px black;
 }
 
 .chapter p {
@@ -49,7 +49,6 @@ body {
 }
 
 #footer {
-  border-top: solid 2px black;
   padding: 30px 0px;
   margin: auto;
   width: 100%;

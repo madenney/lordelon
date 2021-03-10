@@ -47,6 +47,13 @@ var interpretations = {
             link: ""
         }
     },
+    Tweet: {
+        decorations: {
+            color: "blue"
+        },
+        interpretation: {},
+        action: "showTwitterOverlay"
+    },
     Impatience: {
         decorations: {},
         interpretation: {
@@ -54,16 +61,6 @@ var interpretations = {
             pretext: "",
             body: "You too be patient; strengthen your hearts, for the coming of the Kingdom of Elon is nigh.",
             subtext: "James 5:8",
-            link: ""
-        }
-    },
-    Forgive: {
-        decorations: {},
-        interpretation: {
-            title: "",
-            pretext: "",
-            body: "",
-            subtext: "",
             link: ""
         }
     },
@@ -92,7 +89,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: "",
+            body: "Beware those who seek to harness the machine.",
             subtext: "openai",
             link: "https://openai.com"
         }
@@ -101,9 +98,9 @@ var interpretations = {
         decorations: {},
         interpretation: {
             title: "",
-            pretext: "",
-            body: "",
-            subtext: "boring",
+            pretext: "We travel within Earth so we may prosper above it.",
+            body: "For forty four years, Elon lived among mankind. On the forty fifth year of our Lord, He spoke into being an end to the evil of traffic.",
+            subtext: "boring company",
             link: "https://boringcompany.com"
         }
     },

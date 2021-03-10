@@ -1,7 +1,7 @@
 
 
 var isMobile;
-
+var actions = {};
 var preparations = function(){
 
     determineIsMobile();
@@ -19,11 +19,8 @@ var preparations = function(){
             document.body.innerHTML.replace(interpretation,replacement.outerHTML);
     })
     var x = document.getElementsByClassName("interpreted")
-    console.log("x:", x)
     for(var i = 0; i < x.length; i++){
-        console.log("why")
         x[i].addEventListener("click",function(e){
-            console.log("what");
             overlay(e.target.id)
         })
     }
@@ -41,6 +38,9 @@ var determineIsMobile = function(){
 
 var overlay = function(word){
     console.log(interpretations[word])
+    if(interpretations[word].action){
+       return actions[interpretations[word].action]()
+    }
     var overlay = document.getElementById("overlay");
     var title = document.getElementById("overlay-title");
     var pretext = document.getElementById("overlay-pretext");
@@ -62,19 +62,13 @@ var overlay = function(word){
     })
 }
 
-var showTwitterOverlay = function(){
+actions.showTwitterOverlay = function(){
+    console.log("action function");
     var overlay = document.getElementById("twitter-overlay");
     overlay.style.display = "block";
-
     overlay.addEventListener('click', function(){
         overlay.style.display = "none";
     })
-
-    var twitter = document.getElementById("twitter-box");
-    var h = twitter.clientHeight;
-    console.log('clientHeight',h)
-    var f = twitter.offsetHeight;
-    console.log('offsetHeight',f)
 }
 
 
@@ -97,15 +91,3 @@ var clearDomListeners = function(){
     console.log("YOU NEED TO CLEAR YOUR DOM LISTENERS")
 }
 
-var definitions = {
-    hallowed: {
-        title: '"Hallowed"',
-        label: "adjective",
-        content: "greatly revered and honored"
-    },
-    mars: {
-        title: "Mars",
-        label: "planet",
-        content: "The land upon which our grandchildren will live"
-    }
-}

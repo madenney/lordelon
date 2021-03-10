@@ -39,11 +39,35 @@ body {
 
 .interpreted {
   color: red;
+  will-transition;
+  transition: text-shadow 500ms cubic-bezier(.32,1.18,.82,.9);
 }
 
 .interpreted:hover {
   cursor: pointer;
-  text-shadow: 3px 3px 3px;
+  text-shadow: 1px 2px 3px;
+}
+
+#footer {
+  border-top: solid 2px black;
+  padding: 30px 0px;
+  margin: auto;
+  width: 100%;
+  height: 150px;
+}
+
+.donation-line {
+  margin-top: 15px;
+}
+.donation-label {
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+.donation-address{
+  display: inline-block;
+  width: 300px;
+  text-align: left;
 }
 
 #overlay {
@@ -57,16 +81,17 @@ body {
     background-image: radial-gradient(at 50% 37vh,#D0D0D0,#808080,#606060);
     text-align: center;
     backdrop-filter: blur(4px);
-    padding-top: 35vh;
+    padding-top: 32vh;
 }
 
 #overlay-title {
     font-size: 40px;
 }
 #overlay-pretext {
-    margin-top: 10px;
+    margin: 10px auto;
     color:	#484848;
     font-size: 21px;
+    width: 50%;
 }
 #overlay-body {
     margin: 5px auto;
@@ -78,10 +103,40 @@ body {
   font-size: 21px;
 }
 
+#tweet {
+    color: #38A1F3;
+}
+
+#twitter-overlay {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-image: radial-gradient(at 50% 37vh,#D0D0D0,	#808080,#606060);
+    text-align: center;
+    backdrop-filter: blur(3px);
+}
+
+#twitter-box {
+  max-width: 30%;
+  margin-top: 20%;
+  margin: auto;
+}
+
+#twitter-title {
+  font-size: 30px;
+  margin: 30px auto;
+}
 
 @media screen and (max-width: 1300px) {
     .chapter {
       width: 60%;
+    }
+
+    #overlay-pretext {
+      width: 65%;
     }
 
     #overlay-body {
@@ -90,6 +145,10 @@ body {
 
     .main-title {
         font-size: 100px;
+    }
+
+    #twitter-box {
+      max-width: 50%;
     }
 }
 
@@ -102,6 +161,10 @@ body {
       margin: 22px auto;
     }
 
+    #overlay-pretext {
+      width: 85%;
+    }
+
     #overlay-body {
         width: 80%;
     }
@@ -109,32 +172,22 @@ body {
     .main-title {
         font-size: 65px;
     }
-
     .subscript {
         font-size: 18px;
+    }
+    .donation-address, .donation-label {
+      text-align: center;
     }
 
     #overlay{
         background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
     }
-}
 
-
-#tweet {
-    color: #38A1F3;
-}
-
-#twitter-overlay {
-    display: none;
-    position: fixed;
-    opacity: 90%;
-    height: 100vh;
-    width: 100vw;
-    top: 0px;
-    left: 0px;
-    background-image: radial-gradient(at 50% 37vh,#D0D0D0,	#808080,#606060);
-    text-align: center;
-    backdrop-filter: blur(3px);
-    padding-top: 35vh;
+    #footer {
+      height: 350px;
+    }
+    #twitter-box {
+      max-width: 85%;
+    }
 }
 

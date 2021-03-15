@@ -30,7 +30,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: '"For this is the Will of Elon: your salvation, that you look to the future with hope and praise."',
+            body: '"For this is the Will of Elon, your salvation, that you look to the future with hope and praise."',
             subtext: "Teslonians 4:3",
             link: ""
         }
@@ -43,7 +43,7 @@ var interpretations = {
             title: "",
             pretext: "",
             body: 'And Elon said unto Gwynne, his disciple, "Upon this rock I will build my church."',
-            subtext: "Martians 20:45",
+            subtext: "Martians 5:8",
             link: ""
         }
     },
@@ -61,8 +61,8 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: "You too be patient; strengthen your hearts, for the coming of the Kingdom of Elon is nigh.",
-            subtext: "James 5:8",
+            body: '"You too be patient; strengthen your hearts, for the coming of the Kingdom of Elon is nigh."',
+            subtext: "Matthew 20:45",
             link: ""
         }
     },
@@ -96,8 +96,8 @@ var interpretations = {
         },
         interpretation: {
             title: "",
-            pretext: '"We must pass The Great Filter" - Elon 1592726820',
-            body: "For Elon so loved the world, that He gave His only body, that whoever believes in Him shall not perish, but have eternal life.",
+            pretext: '"We must pass The Great Filter"',
+            body: "For Elon so loved the world, that He gave His only life, that whoever believes in Him shall not perish, but have eternal life.",
             subtext: "The Great Filter",
             link: "https://en.wikipedia.org/wiki/Great_Filter"
         }
@@ -108,15 +108,15 @@ var interpretations = {
         },
         interpretation: {
             title: "",
-            pretext: "We travel within Earth so we may prosper above it.",
-            body: "For forty four years, Elon lived among mankind. On the forty fifth year of our Lord, He spoke into being an end to the evil of traffic.",
+            pretext: "We travel within the Earth so we may prosper above the Earth.",
+            body: "For forty four years, Elon lived among mankind and witnessed their suffering. On the forty fifth year of our Lord, He spoke into being an end to the evil of traffic.",
             subtext: "boring company",
             link: "https://boringcompany.com"
         }
     },
     ["Lift us Up"]: {
         decorations: {
-            color: "#4188ff"
+            color: "#1261A0"
         },
         interpretation: {
             title: "",
@@ -128,7 +128,7 @@ var interpretations = {
     },
     ["Give us Power"]: {
         decorations: {
-            color: "#4188ff"
+            color: "#1261A0"
         },
         interpretation: {
             title: "",
@@ -140,7 +140,7 @@ var interpretations = {
     },
     ["Show us The Way"]: {
         decorations: {
-            color: "#4188ff"
+            color: "#1261A0"
         },
         interpretation: {
             title: "",
@@ -149,25 +149,5 @@ var interpretations = {
             subtext: "neuralink",
             link: "https://neuralink.com"
         }
-    },
-    Galory: {
-        decorations: {},
-        interpretation: {
-            title: "",
-            pretext: "",
-            body: "",
-            subtext: "",
-            link: ""
-        }
     }
 }
-
-/*
-    Tweet: {
-        decorations: {
-            color: "#38A1F3"
-        },
-        action: "showTwitterOverlay"
-    }
-
-*/

@@ -12,7 +12,7 @@ body {
     font-family: 'Font';
 }
 
-.chapter {
+#chapter {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: white;
@@ -21,8 +21,8 @@ body {
     border-bottom: solid 2px black;
 }
 
-.chapter p {
-    color: #696969;
+#chapter p {
+    color: #505050;
     font-size: 30px;
 }
 
@@ -53,6 +53,8 @@ body {
   margin: auto;
   width: 100%;
   height: 150px;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .donation-line {
@@ -79,10 +81,8 @@ body {
     left: 0px;
     background-image: radial-gradient(at 50% 37vh,#D0D0D0,#808080,#606060);
     text-align: center;
-    backdrop-filter: blur(4px);
     padding-top: 32vh;
 }
-
 #overlay-title {
     font-size: 40px;
 }
@@ -109,7 +109,7 @@ body {
 #twitter-overlay {
     display: none;
     position: fixed;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     top: 0px;
     left: 0px;
@@ -129,8 +129,8 @@ body {
   margin: 30px auto;
 }
 
-@media screen and (max-width: 1300px) {
-    .chapter {
+@media screen and (max-width: 1300px) and (min-width: 651px) {
+    #chapter {
       width: 60%;
     }
 
@@ -152,10 +152,10 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-    .chapter {
+    #chapter {
       width: 100%;
     }
-    .chapter p {
+    #chapter p {
       font-size: 26px;
       margin: 22px auto;
     }
@@ -176,14 +176,74 @@ body {
     }
     .donation-address, .donation-label {
       text-align: center;
+      font-size: 17px;
     }
 
-    #overlay{
+    #overlay {
         background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
     }
 
     #footer {
       height: 350px;
+    }
+    #twitter-box {
+      max-width: 85%;
+    }
+}
+
+@media screen and (max-device-width: 650px) {
+    #chapter {
+      width: 100%;
+    }
+    #chapter p {
+      font-size: 45px;
+      margin: 22px auto;
+    }
+
+    .main-title {
+        font-size: 150px;
+    }
+    .subscript {
+        font-size: 18px;
+    }
+
+    #overlay {
+        background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
+    }
+    #overlay-title {
+        font-size: 65px;
+    }
+    #overlay-pretext {
+        margin: 5px auto;
+        color:	#484848;
+        font-size: 50px;
+        width: 75%;
+    }
+    #overlay-body {
+        min-width: 90vw;
+        margin: 5px auto;
+        font-size: 70px;
+    }
+    #overlay-subtext {
+        font-size: 40px;
+    }
+
+    #footer {
+      margin-top: 40px;
+      height: 600px;
+      text-align: center;
+    }
+    #footer-title {
+      font-size: 50px;
+    }
+    .donation-label, .donation-address {
+      font-size: 40px;
+      width: 100vw;
+      text-align: center;
+    }
+    #twitter-title {
+      font-size: 80px;
+      margin: 40px auto;
     }
     #twitter-box {
       max-width: 85%;

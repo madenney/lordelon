@@ -1,93 +1,74 @@
 
-
-var isMobile;
+var overlay, title, pretext, body, subtext, twitterOverlay, chapter, footer
 var actions = {};
-var preparations = function(){
 
-    determineIsMobile();
-    Object.keys(interpretations).forEach(function(interpretation){
-        console.log(interpretation)
-        var _replacement = `<span id=${interpretation} class="test">${interpretation}</span>`
+var interpret = function(){
+    var lines = document.getElementsByTagName("p");
+    Object.keys(interpretations).forEach(function(word){
         var replacement = document.createElement("span");
-        replacement.innerHTML = interpretation;
-        replacement.id = interpretation;
+        replacement.innerHTML = word;
+        replacement.id = word;
         replacement.className = "interpreted";
-        Object.keys(interpretations[interpretation].decorations).forEach(function(decoration){
-            replacement.style[decoration] = interpretations[interpretation].decorations[decoration]
-        })
-        document.body.innerHTML =
-            document.body.innerHTML.replace(interpretation,replacement.outerHTML);
-    })
-    var x = document.getElementsByClassName("interpreted")
-    for(var i = 0; i < x.length; i++){
-        x[i].addEventListener("click",function(e){
-            overlay(e.target.id)
-        })
+        Object.keys(interpretations[word].decorations).forEach(function(decoration){
+            replacement.style[decoration] = interpretations[word].decorations[decoration]
+        });
+        for(var i = 0; i < lines.length; i++){
+            if(lines[i].innerHTML.indexOf(word) != -1){
+                lines[i].innerHTML = lines[i].innerHTML.replace(word,replacement.outerHTML);
+                break;
+            }
+        }
+    });
+    var interpreted = document.getElementsByClassName("interpreted");
+    for(var i = 0; i < interpreted.length; i++){
+        interpreted[i].addEventListener("click",function(e){
+            showOverlay(e.target.id);
+            gtag('event', 'button_click', {'label': e.target.id});
+        });
     }
 }
 
-var determineIsMobile = function(){
-    isMobile = screen.width < 650;
-    console.log(screen.width);
-    if(isMobile){
-        console.log("Mobile Device")
-    } else {
-        console.log("Desktop");
-    }
-}
-
-var overlay = function(word){
-    console.log(interpretations[word])
+var showOverlay = function(word){
     if(interpretations[word].action){
-       return actions[interpretations[word].action]()
+       return actions[interpretations[word].action]();
     }
-    var overlay = document.getElementById("overlay");
-    var title = document.getElementById("overlay-title");
-    var pretext = document.getElementById("overlay-pretext");
-    var body = document.getElementById("overlay-body");
-    var subtext = document.getElementById("overlay-subtext");
-
     overlay.style.display = "block";
-    title.innerHTML = interpretations[word].interpretation.title
+    chapter.style.filter = "blur(5px)";
+    footer.style.filter = "blur(5px)";
+    title.innerHTML = interpretations[word].interpretation.title;
     pretext.innerHTML = interpretations[word].interpretation.pretext;
     body.innerHTML = interpretations[word].interpretation.body;
     if(interpretations[word].interpretation.link){
-        subtext.innerHTML = `<a href="${interpretations[word].interpretation.link}" target="_blank" rel="noopener noreferrer">${interpretations[word].interpretation.subtext}</a>`
+        subtext.innerHTML = `<a href="${interpretations[word].interpretation.link}" target="_blank" rel="noopener noreferrer">${interpretations[word].interpretation.subtext}</a>`;
     } else {
-        subtext.innerHTML = interpretations[word].interpretation.subtext
+        subtext.innerHTML = interpretations[word].interpretation.subtext;
     }
-
-    overlay.addEventListener('click', function(){
-        overlay.style.display = "none";
-    })
 }
 
 actions.showTwitterOverlay = function(){
-    console.log("action function");
-    var overlay = document.getElementById("twitter-overlay");
-    overlay.style.display = "block";
-    overlay.addEventListener('click', function(){
+    twitterOverlay.style.display = "block";
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+    chapter = document.getElementById("chapter");
+    footer = document.getElementById("footer");
+    overlay = document.getElementById("overlay");
+    title = document.getElementById("overlay-title");
+    pretext = document.getElementById("overlay-pretext");
+    body = document.getElementById("overlay-body");
+    subtext = document.getElementById("overlay-subtext");
+    twitterOverlay = document.getElementById("twitter-overlay");
+
+    overlay.addEventListener("click",function(e){
         overlay.style.display = "none";
+        chapter.style.filter = "none";
+        footer.style.filter = "none";
     })
-}
 
+    twitterOverlay.addEventListener("click",function(e){
+        twitterOverlay.style.display = "none";
+    });
 
-
-document.addEventListener("DOMContentLoaded", preparations );
-
-var debouncer = false;
-window.onresize = function(x){
-    if(debouncer){
-        clearTimeout(debouncer);
-    }
-    debouncer = setTimeout( function(){
-        clearDomListeners();
-        preparations();
-        debouncer = false;
-    }, 500 )
-}
-
-var clearDomListeners = function(){
-    console.log("YOU NEED TO CLEAR YOUR DOM LISTENERS")
-}
+    interpret();
+});
 

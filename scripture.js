@@ -23,7 +23,7 @@ var interpret = function(){
     for(var i = 0; i < interpreted.length; i++){
         interpreted[i].addEventListener("click",function(e){
             showOverlay(e.target.id);
-            gtag('event', 'button_click', {'label': e.target.id});
+            gtag('event', 'word_click', {'label': e.target.id});
         });
     }
 }

@@ -196,12 +196,12 @@ body {
       width: 100%;
     }
     #chapter p {
-      font-size: 45px;
+      font-size: 25px;
       margin: 22px auto;
     }
 
     .main-title {
-        font-size: 150px;
+        font-size: 56px;
     }
     .subscript {
         font-size: 18px;
@@ -209,6 +209,7 @@ body {
 
     #overlay {
         background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
+        padding-top: 26vh;
     }
     #overlay-title {
         font-size: 65px;
@@ -216,33 +217,37 @@ body {
     #overlay-pretext {
         margin: 5px auto;
         color:	#484848;
-        font-size: 50px;
+        font-size: 24px;
         width: 75%;
     }
     #overlay-body {
         min-width: 90vw;
         margin: 5px auto;
-        font-size: 70px;
+        font-size: 28px;
     }
     #overlay-subtext {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     #footer {
-      margin-top: 40px;
+      margin-top: 18px;
       height: 600px;
       text-align: center;
     }
     #footer-title {
-      font-size: 50px;
+      font-size: 30px;
     }
     .donation-label, .donation-address {
-      font-size: 40px;
-      width: 100vw;
       text-align: center;
     }
+    .donation-label {
+      font-size: 24px;
+    }
+    .donation-address {
+      font-size: 17px;
+    }
     #twitter-title {
-      font-size: 80px;
+      font-size: 32px;
       margin: 40px auto;
     }
     #twitter-box {

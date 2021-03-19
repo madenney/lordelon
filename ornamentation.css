@@ -39,6 +39,7 @@ body {
 
 .interpreted {
   color: red;
+  text-decoration: underline;
   will-transition;
   transition: text-shadow 500ms cubic-bezier(.32,1.18,.82,.9);
 }

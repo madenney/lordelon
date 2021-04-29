@@ -18,7 +18,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: '"Blessed be the Kingdom of Elon, that cometh in the name of the Lord; Marsanna in the highest.',
+            body: '"Blessed be the Kingdom of Elon, that cometh in the name of the Lord; Marsanna in the highest."',
             subtext: "Matthew 13:12",
             link: ""
         }

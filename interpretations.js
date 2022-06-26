@@ -108,6 +108,7 @@ var interpretations = {
         },
         interpretation: {
             title: "",
+            pretext: "",
             body: "For forty four years, Elon lived among mankind and witnessed their suffering. On the forty fifth year of our Lord, He began digging.",
             subtext: "boring company",
             link: "https://boringcompany.com"

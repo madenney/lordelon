@@ -80,16 +80,17 @@ body {
     width: 100vw;
     top: 0px;
     left: 0px;
-    background-image: radial-gradient(at 50% 37vh,#D0D0D0,#808080,#606060);
+    background-image: radial-gradient(at 50% 37vh,#101010,#282828,#383838);
     text-align: center;
     padding-top: 32vh;
+    color: white;
 }
 #overlay-title {
     font-size: 40px;
 }
 #overlay-pretext {
     margin: 10px auto;
-    color:	#484848;
+    color: #DCDCDC;
     font-size: 21px;
     width: 50%;
 }
@@ -103,6 +104,10 @@ body {
   font-size: 21px;
 }
 
+a {
+    color: #00FFFF;
+}
+
 #tweet {
     color: #38A1F3;
 }
@@ -114,7 +119,7 @@ body {
     width: 100vw;
     top: 0px;
     left: 0px;
-    background-image: radial-gradient(at 50% 37vh,#D0D0D0,	#808080,#606060);
+    background-image: radial-gradient(at 50% 37vh,#101010,#282828,#383838);
     text-align: center;
     backdrop-filter: blur(3px);
 }
@@ -181,7 +186,7 @@ body {
     }
 
     #overlay {
-        background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
+        background-image: radial-gradient(at 50% 37vh,#101010,#282828,#383838);
     }
 
     #footer {
@@ -209,7 +214,7 @@ body {
     }
 
     #overlay {
-        background-image: radial-gradient(at 50% 37vh,#E8E8E8,#D0D0D0,#808080);
+        background-image: radial-gradient(at 50% 37vh,#101010,#282828,#383838);
         padding-top: 26vh;
     }
     #overlay-title {
@@ -217,7 +222,6 @@ body {
     }
     #overlay-pretext {
         margin: 5px auto;
-        color:	#484848;
         font-size: 24px;
         width: 75%;
     }

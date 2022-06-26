@@ -18,7 +18,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: '"Blessed be the Kingdom of Elon, that cometh in the name of the Lord; Marsanna in the highest."',
+            body: '"Blessed be the Kingdom of Elon, that cometh in the name of the Lord."',
             subtext: "Matthew 13:12",
             link: ""
         }
@@ -85,7 +85,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "",
-            body: "We forgive those who disrespect our Lord, for they know not of which they speak.",
+            body: "We forgive those who disrespect our Lord, for they do not see the light.",
             subtext: "",
             link: ""
         }
@@ -108,8 +108,8 @@ var interpretations = {
         },
         interpretation: {
             title: "",
-            pretext: "We travel within the Earth so we may prosper above the Earth.",
-            body: "For forty four years, Elon lived among mankind and witnessed their suffering. On the forty fifth year of our Lord, He spoke into being an end to the evil of traffic.",
+            pretext: "We look down so we can look up.",
+            body: "For forty four years, Elon lived among mankind and witnessed their suffering. On the forty fifth year of our Lord, He began digging.",
             subtext: "boring company",
             link: "https://boringcompany.com"
         }
@@ -145,7 +145,7 @@ var interpretations = {
         interpretation: {
             title: "",
             pretext: "Elon said unto his apostles:",
-            body: '"Blessed be those who multiply the bandwidth between themselves and the machine, for they shall inherit the world."',
+            body: '"Blessed be those who increase bandwidth between themselves and machines, for they shall inherit the world."',
             subtext: "neuralink",
             link: "https://neuralink.com"
         }
